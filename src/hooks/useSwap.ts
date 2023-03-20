@@ -2,11 +2,9 @@ import { Token } from "@uniswap/sdk-core";
 import IUniswapV3PoolArtifact from "@uniswap/v3-core/artifacts/contracts/interfaces/IUniswapV3Pool.sol/IUniswapV3Pool.json";
 import { Pool } from "@uniswap/v3-sdk";
 import { ethers, type BigNumber } from "ethers";
-import { errors } from "ethers";
-import { useContract, useProvider, goerli, useAccount } from "wagmi";
-import ISwapRouterArtifact from "@uniswap/v3-periphery/artifacts/contracts/interfaces/ISwapRouter.sol/ISwapRouter.json";
-import useToken from "./useToken";
+import { goerli, useAccount, useContract, useProvider } from "wagmi";
 import useToast from "./useToast";
+import useToken from "./useToken";
 
 export interface Immutables {
   token0: string;
